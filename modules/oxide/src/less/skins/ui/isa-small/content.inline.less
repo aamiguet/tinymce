@@ -1,0 +1,67 @@
+/**
+ * Copyright (c) Tiny Technologies, Inc. All rights reserved.
+ * Licensed under the LGPL or a commercial license.
+ * For LGPL see License.txt in the project root for license information.
+ * For commercial licenses see https://www.tiny.cloud/
+ */
+
+@import 'src/less/theme/content-ui';
+
+.mce-content-body {
+  /* all: initial;  Ne pas utiliser car a des effets de bord sur Chrome et FF */
+  border: 1px solid #d9d9d9;
+  color: initial;
+  cursor: initial;
+  font-family: Helvetica, sans-serif;
+  font-size: 10pt;
+
+  &.mce-edit-focus {
+    border-color: black;
+    display: block;
+    outline: none;
+  }
+
+  &:not(.mce-edit-focus) {
+    border: 0;
+  }
+
+  p {
+    display: block;
+    margin-top: 0;
+  }
+
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+
+  ul,
+  ol {
+    display: block;
+    margin: initial;
+    padding-left: 40px;
+
+    li {
+      border-bottom: none;
+      display: list-item;
+      margin: initial;
+
+      &:hover {
+        background-color: inherit;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    display: inline;
+    font-weight: inherit;
+  }
+}
