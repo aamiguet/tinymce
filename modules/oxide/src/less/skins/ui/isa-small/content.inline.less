@@ -7,7 +7,9 @@
 
 @import 'src/less/theme/content-ui';
 
-.mce-content-body {
+/* stylelint-disable no-descending-specificity */
+.mce-content-body,
+.blocinfobody .mce-content-body {
   /* all: initial;  Ne pas utiliser car a des effets de bord sur Chrome et FF */
   border: 1px solid #d9d9d9;
   color: initial;
@@ -64,3 +66,4 @@
     font-weight: inherit;
   }
 }
+/* stylelint-enable no-descending-specificity */
